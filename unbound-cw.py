@@ -21,9 +21,17 @@ aws_namespace = "MyNamespace/Unbound"
 
 # Map Unbound individual stats to AWS CloudWatch metrics
 aws_metrics_mapping = {
-    "total.num.recursivereplies": "RecursiveReplies",
-    "total.tcpusage": "TcpUsage",
     "total.num.queries": "NumQueries",
+    "total.num.cachehits": "NumCacheHits",
+    "total.num.cachemiss": "NumCacheMiss",
+    "total.num.prefetch": "NumPrefetch",
+    "total.num.zero_ttl": "NumZeroTTL",
+    "total.num.recursivereplies": "RecursiveReplies",
+    "total.requestlist.avg": "RequestListsAverage",
+    "total.requestlist.overwritten": "RequestListsOverwritten",
+    "total.requestlist.exceeded": "RequestListsExceeded",
+    "total.recursion.time.avg": "RecursionTimeAverage",
+    "total.tcpusage": "TcpUsage",
 }
 # Unbound binaries path
 ub_path = "/usr/local/sbin"

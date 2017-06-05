@@ -27,6 +27,9 @@ aws_metrics_mapping = {
 ub_path = "/usr/local/sbin"
 ```
 
+In the examples folder, you can find the complete list of stats exported by Unbound and the associated AWS CloudWatch metrics.
+You can also find an example policy file to set as a role on AWS in order to give the right permissions to this script for pushing data to CloudWatch.
+
 ## License
 
 Copyright 2017 Technofy
